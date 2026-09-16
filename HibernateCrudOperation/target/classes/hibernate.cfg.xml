@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Database Connection -->
+
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <property name="hibernate.connection.url">
+             jdbc:mysql://localhost:3306/movie_ticket_booking_system
+        </property>
+        
+        <property name="hibernate.connection.username">
+            root
+        </property>
+
+        <property name="hibernate.connection.password">
+            9324070450
+        </property>
+
+        <!-- Hibernate Settings -->
+
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+
+        <property name="hibernate.show_sql">
+            true
+        </property>
+
+        <property name="hibernate.format_sql">
+            true
+        </property>
+
+
+        <!-- Entity -->
+
+        <mapping class="com.movieticket.HibernateCrudOperation.Movie"/>
+
+    </session-factory>
+
+</hibernate-configuration>
